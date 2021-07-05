@@ -1,0 +1,520 @@
+(venv-ctf) neptunian:~/ctf/hack-a-sat-2021/tree-in-the-forest$ python attack.py 
+[+] Opening connection to lucky-tree.satellitesabove.me on port 5008: Done
+[*] Starting up Service on udp:18.222.149.188:30523
+[*] IP: 18.222.149.188; Port: 30523
+[*] Closed connection to lucky-tree.satellitesabove.me port 5008
+[+] Opening connection to 18.222.149.188 on port 30523: Done
+[*] Invalid length of command header, expected 8 but got 1
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Command Success: LOCKED
+[*] Command header acknowledge: version:12 type:13 id:-8
+[*] Switching to interactive mode
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: LOCKED
+Command header acknowledge: version:12 type:13 id:-8
+Command Success: UNLOCKED
+Command header acknowledge: version:12 type:13 id:9
+flag{juliet648137sierra2:GMKztC_pG2FaurEgSJIGJRhFXLBnZUMViU_2QsHRsze6Gh12pr3stjgG0MfLRsrMT6RWYbhiJZ8WJDLDCKzSIlM}

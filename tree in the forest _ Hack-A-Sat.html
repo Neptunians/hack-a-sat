@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)https://quals.2021.hackasat.com/scoreboard/challenge/16 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="./tree in the forest _ Hack-A-Sat_files/NRJS-302d7e045777c99e767"></script><script src="./tree in the forest _ Hack-A-Sat_files/nr-1209.min.js"></script><script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"NRJS-302d7e045777c99e767","applicationID":"1311209086","transactionName":"cw1cRkVeXgpVRxwVAV8QV1BYUEACH1ZbBw5cB1xVUg==","queueTime":1,"applicationTime":42,"agent":""}</script>
+<script>(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-302d7e045777c99e767",applicationID:"1311209086"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[u.now()].concat(f(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(8),f=t(9),c=t("ee").get("tracer"),u=t("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){s[e]=i(p+e,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){function r(){return f.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,f=t(10);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],4:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],5:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof m&&!g){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),g=!0,d("timing",["fi",e,n])}}function f(t){d("pageHide",[p.now(),t])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var c,u,s,d=t("handle"),p=t("loader"),l=t(7),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){c=new PerformanceObserver(r);try{c.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,h=["click","keydown","mousedown","pointerdown","touchstart"];h.forEach(function(t){document.addEventListener(t,a,!1)})}l(f)}},{}],6:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],7:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],8:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],9:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],10:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var f=e(i),c=v(n),u=c.length,s=0;s<u;s++)c[s].apply(f,r);var p=d[w[n]];return p&&p.push([b,n,r,f]),f}}function o(t,e){y[t]=v(t).concat(e)}function m(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function v(t){return y[t]||[]}function g(t){return p[t]=p[t]||i(n)}function h(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var y={},w={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:e,buffer:h,abort:f,aborted:!1};return b}function o(t){return u(t,c,a)}function a(){return new r}function f(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var c="nr@context",u=t("gos"),s=t(8),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!R++){var t=M.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();f("mark",["onload",n+M.offset],null,"api"),f("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===v.readyState&&o()}function o(){f("mark",["domContent",a()+M.offset],null,"api")}var a=t(3),f=t("handle"),c=t(8),u=t("ee"),s=t(6),d=t(4),p=t(2),l=p.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,g="addEventListener",h="attachEvent",y=m.XMLHttpRequest,w=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1209.min.js"},O=y&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(5),v[g]?(v[g]("DOMContentLoaded",o,!1),m[g]("load",r,!1)):(v[h]("onreadystatechange",i),m[h]("onload",r)),f("mark",["firstbyte",a.getLastTimestamp()],null,"api");var R=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,c],s],t)}f(n+"start",[o,a,c],s,u);try{return p=e.apply(a,o)}catch(m){throw f(n+"err",[o,a,m],s,u),m}finally{f(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var f,c,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)c=e[u],f=t[c],a(f)||(t[c]=n(f,s?c+r:r,i,c,o))}function f(n,r,o,a){if(!m||e){var f=m;m=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}m=f}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function f(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function c(t,e,n){var r=t[e];t[e]=f(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(9),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;e.exports=r,e.exports.wrapFunction=f,e.exports.wrapInPlace=c,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<title>tree in the forest | Hack-A-Sat</title>
+<link rel="stylesheet" media="all" href="./tree in the forest _ Hack-A-Sat_files/application-a3e057652bc4edfc5907ff01fc698dd0213359953f692831b61cefc497c0273b.css">
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="u0cLwWb/pR9w4jHQRZAx6e7m86ml2ScWtrbbJFKbgKos3o1nndw8bD1O9/6a0XY95sMvvgxNn5lKYysQS+a1WA==">
+<link rel="shortcut icon" type="image/x-icon" href="https://quals-assets.2021.hackasat.com/assets/logo-64x64-70a2b12eee87d3e14281ff5f886f291f247eab8fce81dfccdde6d022298de210.png" sizes="64x64">
+
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport">
+<script type="text/javascript" charset="UTF-8" src="./tree in the forest _ Hack-A-Sat_files/loader.js"></script><link id="load-css-0" rel="stylesheet" type="text/css" href="./tree in the forest _ Hack-A-Sat_files/tooltip.css"><link id="load-css-1" rel="stylesheet" type="text/css" href="./tree in the forest _ Hack-A-Sat_files/util.css"><script type="text/javascript" charset="UTF-8" src="./tree in the forest _ Hack-A-Sat_files/jsapi_compiled_default_module.js"></script><script type="text/javascript" charset="UTF-8" src="./tree in the forest _ Hack-A-Sat_files/jsapi_compiled_graphics_module.js"></script><script type="text/javascript" charset="UTF-8" src="./tree in the forest _ Hack-A-Sat_files/jsapi_compiled_ui_module.js"></script><script type="text/javascript" charset="UTF-8" src="./tree in the forest _ Hack-A-Sat_files/jsapi_compiled_corechart_module.js"></script></head>
+<body class="con-scoreboard act-challenge">
+<div data-message-interval="60000" data-message-path="/notices" id="messages">
+<ol id="messages-inner">
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/27/2021, 1:44:09 PM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">Poland Can Into Space solved King's Ransom 2 from Presents from Marco.</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/27/2021, 12:41:39 PM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">Solar Wine solved King's Ransom from Presents from Marco.</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/27/2021, 12:38:30 PM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">Spinny: body spin rates should be 0.1 deg/s not 0.1 rad/s</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/27/2021, 12:37:17 PM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">FluxRepeatRocket solved Mr. Radar from Guardians of the….</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/27/2021, 11:32:50 AM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">we assure you the server binary FOR AMOGUS isn't sus</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/27/2021, 11:32:28 AM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">we assure you the server binary isn't sus</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/27/2021, 11:31:52 AM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">PPP solved Saving Spinny from Guardians of the….</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/27/2021, 11:01:08 AM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">Poland Can Into Space solved Error Correction from We're On the Same Wavelength.</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/27/2021, 10:03:25 AM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">Marco has new presents for you https://youtu.be/DelhLppPSxY</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/27/2021, 8:32:02 AM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">certain gnuradio version fecs are not the fecs you are looking for</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/27/2021, 6:03:31 AM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">Hint of AmogUs: The three of us vote on star-tracker data and someone among us is acting a bit sus (you). Find a way to "convince" the interface  module (the binary) that you have the only vote that matters...</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/27/2021, 4:02:29 AM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">OneSmallHackForMan solved credence clearwater space data systems from We're On the Same Wavelength.</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/27/2021, 3:42:10 AM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">For Take Out the Trash, the text returned on the socket is incorrect, it should say 10km instead of 30km</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/27/2021, 3:38:38 AM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">PPP solved Take Out the Trash from Deck 36, Main Engineering.</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/27/2021, 3:31:45 AM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">Grade F Prime Beef times out 300 seconds early, this is a cosmetic issue, and does not change how solvable it is, there are multiple solves for it already</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/27/2021, 2:49:25 AM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">PPP solved Grade F Prime Beef from Rapid Unplanned Disassembly.</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/27/2021, 2:19:53 AM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">SpaceBlender solved amogus from Rapid Unplanned Disassembly.</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/27/2021, 1:21:27 AM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">Hindsight has been updated to be solvable, pull the updated static files</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/27/2021, 1:01:08 AM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">There's a new challenge amogus</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/27/2021, 1:00:03 AM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">Mission Control solved Hindsight from Deck 36, Main Engineering.</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/27/2021, 12:21:10 AM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">We're having an emergency meeting at midnight (40 minutes from now) if Hindsight isn't solved</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/26/2021, 7:43:05 PM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">FluxRepeatRocket solved Problems are Mounting from Deck 36, Main Engineering.</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/26/2021, 7:25:28 PM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">For the challenge "Problems are Mounting", you are intended to assume the solar constant.</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/26/2021, 6:54:15 PM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">PPP solved Mongoose Mayhem from Rapid Unplanned Disassembly.</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/26/2021, 4:36:31 PM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">ThoseWhoFailedTheOnOrbitChallenge solved Mars or Bust from Rapid Unplanned Disassembly.</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/26/2021, 4:27:49 PM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">Cotton Eye GEO will exit without any error message if you enter an invalid time string</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/26/2021, 2:51:26 PM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">quick note about challenge scores: they lose value as more teams solve them. simply solve more challenges to get more points :)</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/26/2021, 1:28:33 PM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">Poland Can Into Space solved Linky from Guardians of the….</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/26/2021, 12:52:20 PM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">vMag solved Cotton Eye GEO from Guardians of the….</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/26/2021, 12:10:19 PM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">Ncube solved Quaternion from Deck 36, Main Engineering.</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/26/2021, 11:54:11 AM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">Time to learn what a quaternion is</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/26/2021, 11:46:41 AM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">Mission Control solved groundead from Presents from Marco.</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/26/2021, 11:42:54 AM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">47cts solved Fiddlin' John Carson from Guardians of the….</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/26/2021, 11:37:31 AM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">Les Pl@tistes solved Bit Flipper from We're On the Same Wavelength.</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/26/2021, 11:18:13 AM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">bit flipper file is up</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/26/2021, 11:17:31 AM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">Files for bit flipper are coming momentarily; groundead files are up now</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/26/2021, 11:13:43 AM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">Mission Control solved "tree in the forest" to fix a glitch, it's cool</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/26/2021, 11:11:39 AM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">Mission Control solved tree in the forest from Rapid Unplanned Disassembly.</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/26/2021, 11:04:43 AM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">FluxRepeatRocket solved iq from We're On the Same Wavelength.</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/26/2021, 11:01:10 AM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">1064CBread solved Vandenberg from Launch Pad.</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/26/2021, 11:00:34 AM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">Tea MSG solved Edwards from Launch Pad.</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/26/2021, 11:00:26 AM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">FluxRepeatRocket solved Cape Canaveral from Launch Pad.</p>
+</li>
+
+<li style="background-color: rgba(255, 0, 0, 0);">
+<div class="metadata">
+<span class="timestamp">6/26/2021, 11:00:00 AM</span>
+<span class="sender">&lt;global&gt;</span>
+</div>
+<p class="message">Welcome to Hack-A-Sat 2</p>
+</li>
+</ol>
+</div>
+<div id="timer-holder">
+<div data-remain="8075.983084243" id="timer">
+2:14:11
+</div>
+
+</div>
+<div id="challenge">
+<div id="chaldata">
+<h1 class="name">tree in the forest</h1>
+<h2>
+Rapid Unplanned Disassembly,
+31 points
+</h2>
+<p>
+<a href="https://quals.2021.hackasat.com/scoreboard">Back to Scoreboard</a>
+</p>
+</div>
+<div id="chalcol">
+<div id="actual_challenge">
+<p class="clue"></p><pre><code>CC=g++-9.3.0
+
+challenge: src/parser.c
+    $(CC) src/parser.c -o $@
+</code></pre>
+<p></p>
+<h2>Ticket</h2>
+<p>
+Present this ticket when connecting to the challenge:
+<br>
+<code>ticket{juliet648137sierra2:GM2VWWW507Zec8zn2Pqi3Do3UCEdvyeBX6yLK3-Mh5KJoB6eNzDe9OMYQchobxQZnA}</code>
+<br>
+Don't share your ticket with other teams.
+</p>
+<h2>Connecting</h2>
+<p>
+Connect to the challenge on:
+<br>
+<code>lucky-tree.satellitesabove.me:5008</code>
+</p>
+<p>
+Using netcat, you might run:
+<br>
+<code>nc lucky-tree.satellitesabove.me 5008</code>
+</p>
+<h2>Files</h2>
+<p>
+You'll need these files to solve the challenge.
+</p>
+<ul class="files">
+<li class="filename">
+<a href="https://static.2021.hackasat.com/vca80g4d8hvxhpvebfh4ug3ntgck">https://static.2021.hackasat.com/vca80g4d8hvxhpvebfh4ug3ntgck</a>
+</li>
+</ul>
+<h2>Solving</h2>
+<p>
+Your team's flag for this challenge will look something like:
+<br>
+<code>flag{juliet648137sierra2:___a bunch of unguessable stuff___}</code>
+</p>
+<form class="new_solution" id="new_solution" action="https://quals.2021.hackasat.com/scoreboard/challenge/16" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="u0cLwWb/pR9w4jHQRZAx6e7m86ml2ScWtrbbJFKbgKos3o1nndw8bD1O9/6a0XY95sMvvgxNn5lKYysQS+a1WA=="><label for="answer">Flag:</label>
+<input type="text" name="answer" id="answer" value="" placeholder="flag{…}" class="big">
+<input type="submit" name="commit" value="Solve it" data-disable-with="Solve it">
+</form></div>
+<div class="stats">
+<h2>Statistics</h2>
+<table>
+<tbody>
+<tr>
+<th>views</th>
+<td>1</td>
+</tr>
+<tr>
+<th>solves</th>
+<td>154</td>
+</tr>
+<tr>
+<th>unlocked</th>
+<td title="2021-06-26 14:00:00 UTC">
+1 day
+ago
+</td>
+</tr>
+<tr>
+<th>first solved</th>
+<td title="2021-06-26 14:11:39 UTC">
+1 day
+ago
+</td>
+</tr>
+</tbody>
+</table>
+<div id="histogram_canvas"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 927px; height: 715px;"><div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="927" height="715" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_0"><clippath id="_ABSTRACT_RENDERER_ID_1"><rect x="0" y="0" width="927" height="180"></rect></clippath></defs><rect x="0" y="0" width="927" height="715" stroke="none" stroke-width="0" fill="#00040a"></rect><g><rect x="0" y="0" width="927" height="180" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(https://quals.2021.hackasat.com/scoreboard/challenge/16#_ABSTRACT_RENDERER_ID_1)"><g><rect x="15" y="0" width="1" height="180" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="15" y="175" width="1" height="5" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="46" y="175" width="1" height="5" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="77" y="0" width="1" height="180" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="77" y="175" width="1" height="5" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="108" y="175" width="1" height="5" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="139" y="0" width="1" height="180" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="139" y="175" width="1" height="5" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="170" y="175" width="1" height="5" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="201" y="0" width="1" height="180" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="201" y="175" width="1" height="5" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="231" y="175" width="1" height="5" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="262" y="0" width="1" height="180" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="262" y="175" width="1" height="5" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="293" y="175" width="1" height="5" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="324" y="0" width="1" height="180" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="324" y="175" width="1" height="5" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="355" y="175" width="1" height="5" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="386" y="0" width="1" height="180" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="386" y="175" width="1" height="5" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="417" y="175" width="1" height="5" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="448" y="0" width="1" height="180" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="448" y="175" width="1" height="5" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="478" y="175" width="1" height="5" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="509" y="0" width="1" height="180" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="509" y="175" width="1" height="5" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="540" y="175" width="1" height="5" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="571" y="0" width="1" height="180" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="571" y="175" width="1" height="5" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="602" y="175" width="1" height="5" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="633" y="0" width="1" height="180" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="633" y="175" width="1" height="5" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="664" y="175" width="1" height="5" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="695" y="0" width="1" height="180" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="695" y="175" width="1" height="5" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="725" y="175" width="1" height="5" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="756" y="0" width="1" height="180" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="756" y="175" width="1" height="5" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="787" y="175" width="1" height="5" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="818" y="0" width="1" height="180" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="818" y="175" width="1" height="5" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="849" y="175" width="1" height="5" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="880" y="0" width="1" height="180" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="880" y="175" width="1" height="5" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="911" y="175" width="1" height="5" stroke="none" stroke-width="0" fill="#cccccc"></rect></g><g><rect x="0.5" y="154" width="31" height="25" stroke="none" stroke-width="0" fill="#3366cc"></rect><rect x="31.5" y="128" width="31" height="51" stroke="none" stroke-width="0" fill="#3366cc"></rect><rect x="62.5" y="111" width="31" height="68" stroke="none" stroke-width="0" fill="#3366cc"></rect><rect x="93.5" y="104" width="30" height="75" stroke="none" stroke-width="0" fill="#3366cc"></rect><rect x="123.5" y="93" width="31" height="86" stroke="none" stroke-width="0" fill="#3366cc"></rect><rect x="154.5" y="85" width="31" height="94" stroke="none" stroke-width="0" fill="#3366cc"></rect><rect x="185.5" y="80" width="31" height="99" stroke="none" stroke-width="0" fill="#3366cc"></rect><rect x="216.5" y="77" width="31" height="102" stroke="none" stroke-width="0" fill="#3366cc"></rect><rect x="247.5" y="72" width="31" height="107" stroke="none" stroke-width="0" fill="#3366cc"></rect><rect x="278.5" y="69" width="31" height="110" stroke="none" stroke-width="0" fill="#3366cc"></rect><rect x="309.5" y="65" width="31" height="114" stroke="none" stroke-width="0" fill="#3366cc"></rect><rect x="340.5" y="63" width="30" height="116" stroke="none" stroke-width="0" fill="#3366cc"></rect><rect x="370.5" y="59" width="31" height="120" stroke="none" stroke-width="0" fill="#3366cc"></rect><rect x="401.5" y="56" width="31" height="123" stroke="none" stroke-width="0" fill="#3366cc"></rect><rect x="432.5" y="56" width="31" height="123" stroke="none" stroke-width="0" fill="#3366cc"></rect><rect x="463.5" y="54" width="31" height="125" stroke="none" stroke-width="0" fill="#3366cc"></rect><rect x="494.5" y="50" width="31" height="129" stroke="none" stroke-width="0" fill="#3366cc"></rect><rect x="525.5" y="50" width="31" height="129" stroke="none" stroke-width="0" fill="#3366cc"></rect><rect x="556.5" y="48" width="30" height="131" stroke="none" stroke-width="0" fill="#3366cc"></rect><rect x="586.5" y="46" width="31" height="133" stroke="none" stroke-width="0" fill="#3366cc"></rect><rect x="617.5" y="46" width="31" height="133" stroke="none" stroke-width="0" fill="#3366cc"></rect><rect x="648.5" y="44" width="31" height="135" stroke="none" stroke-width="0" fill="#3366cc"></rect><rect x="679.5" y="44" width="31" height="135" stroke="none" stroke-width="0" fill="#3366cc"></rect><rect x="710.5" y="44" width="31" height="135" stroke="none" stroke-width="0" fill="#3366cc"></rect><rect x="741.5" y="43" width="31" height="136" stroke="none" stroke-width="0" fill="#3366cc"></rect><rect x="772.5" y="42" width="31" height="137" stroke="none" stroke-width="0" fill="#3366cc"></rect><rect x="803.5" y="42" width="30" height="137" stroke="none" stroke-width="0" fill="#3366cc"></rect><rect x="833.5" y="42" width="31" height="137" stroke="none" stroke-width="0" fill="#777777"></rect><rect x="864.5" y="42" width="31" height="137" stroke="none" stroke-width="0" fill="#777777"></rect><rect x="895.5" y="42" width="31" height="137" stroke="none" stroke-width="0" fill="#777777"></rect></g><g><rect x="0" y="179" width="927" height="1" stroke="none" stroke-width="0" fill="#333333"></rect></g></g><g></g><g><g><text text-anchor="middle" x="15.933333333333332" y="201.75" font-family="Ubuntu" font-size="15" stroke="none" stroke-width="0" fill="#444444">1…</text><rect x="4.433333333333332" y="189" width="23" height="15" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect></g><g><text text-anchor="middle" x="77.66666666666666" y="201.75" font-family="Ubuntu" font-size="15" stroke="none" stroke-width="0" fill="#444444">2:00</text><text text-anchor="middle" x="77.66666666666666" y="221.75" font-family="Ubuntu" font-size="15" stroke="none" stroke-width="0" fill="#444444">PM</text></g><g><text text-anchor="middle" x="139.39999999999998" y="201.75" font-family="Ubuntu" font-size="15" stroke="none" stroke-width="0" fill="#444444">4:00</text><text text-anchor="middle" x="139.39999999999998" y="221.75" font-family="Ubuntu" font-size="15" stroke="none" stroke-width="0" fill="#444444">PM</text></g><g><text text-anchor="middle" x="201.13333333333333" y="201.75" font-family="Ubuntu" font-size="15" stroke="none" stroke-width="0" fill="#444444">6:00</text><text text-anchor="middle" x="201.13333333333333" y="221.75" font-family="Ubuntu" font-size="15" stroke="none" stroke-width="0" fill="#444444">PM</text></g><g><text text-anchor="middle" x="262.8666666666667" y="201.75" font-family="Ubuntu" font-size="15" stroke="none" stroke-width="0" fill="#444444">8:00</text><text text-anchor="middle" x="262.8666666666667" y="221.75" font-family="Ubuntu" font-size="15" stroke="none" stroke-width="0" fill="#444444">PM</text></g><g><text text-anchor="middle" x="324.59999999999997" y="201.75" font-family="Ubuntu" font-size="15" stroke="none" stroke-width="0" fill="#444444">10:00</text><text text-anchor="middle" x="324.59999999999997" y="221.75" font-family="Ubuntu" font-size="15" stroke="none" stroke-width="0" fill="#444444">PM</text></g><g><text text-anchor="middle" x="386.3333333333333" y="201.75" font-family="Ubuntu" font-size="15" stroke="none" stroke-width="0" fill="#444444">12:00</text><text text-anchor="middle" x="386.3333333333333" y="221.75" font-family="Ubuntu" font-size="15" stroke="none" stroke-width="0" fill="#444444">AM</text></g><g><text text-anchor="middle" x="448.0666666666666" y="201.75" font-family="Ubuntu" font-size="15" stroke="none" stroke-width="0" fill="#444444">2:00</text><text text-anchor="middle" x="448.0666666666666" y="221.75" font-family="Ubuntu" font-size="15" stroke="none" stroke-width="0" fill="#444444">AM</text></g><g><text text-anchor="middle" x="509.79999999999995" y="201.75" font-family="Ubuntu" font-size="15" stroke="none" stroke-width="0" fill="#444444">4:00</text><text text-anchor="middle" x="509.79999999999995" y="221.75" font-family="Ubuntu" font-size="15" stroke="none" stroke-width="0" fill="#444444">AM</text></g><g><text text-anchor="middle" x="571.5333333333333" y="201.75" font-family="Ubuntu" font-size="15" stroke="none" stroke-width="0" fill="#444444">6:00</text><text text-anchor="middle" x="571.5333333333333" y="221.75" font-family="Ubuntu" font-size="15" stroke="none" stroke-width="0" fill="#444444">AM</text></g><g><text text-anchor="middle" x="633.2666666666667" y="201.75" font-family="Ubuntu" font-size="15" stroke="none" stroke-width="0" fill="#444444">8:00</text><text text-anchor="middle" x="633.2666666666667" y="221.75" font-family="Ubuntu" font-size="15" stroke="none" stroke-width="0" fill="#444444">AM</text></g><g><text text-anchor="middle" x="695" y="201.75" font-family="Ubuntu" font-size="15" stroke="none" stroke-width="0" fill="#444444">10:00</text><text text-anchor="middle" x="695" y="221.75" font-family="Ubuntu" font-size="15" stroke="none" stroke-width="0" fill="#444444">AM</text></g><g><text text-anchor="middle" x="756.7333333333332" y="201.75" font-family="Ubuntu" font-size="15" stroke="none" stroke-width="0" fill="#444444">12:00</text><text text-anchor="middle" x="756.7333333333332" y="221.75" font-family="Ubuntu" font-size="15" stroke="none" stroke-width="0" fill="#444444">PM</text></g><g><text text-anchor="middle" x="818.4666666666666" y="201.75" font-family="Ubuntu" font-size="15" stroke="none" stroke-width="0" fill="#444444">2:00</text><text text-anchor="middle" x="818.4666666666666" y="221.75" font-family="Ubuntu" font-size="15" stroke="none" stroke-width="0" fill="#444444">PM</text></g><g><text text-anchor="middle" x="880.1999999999999" y="201.75" font-family="Ubuntu" font-size="15" stroke="none" stroke-width="0" fill="#444444">4:00</text><text text-anchor="middle" x="880.1999999999999" y="221.75" font-family="Ubuntu" font-size="15" stroke="none" stroke-width="0" fill="#444444">PM</text></g></g></g><g></g></svg><div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;"><table><thead><tr><th>End Time</th><th>Solve Count</th></tr></thead><tbody><tr><td>Jun 26, 2021, 12:00:00 PM</td><td>29</td></tr><tr><td>Jun 26, 2021, 1:00:00 PM</td><td>58</td></tr><tr><td>Jun 26, 2021, 2:00:00 PM</td><td>77</td></tr><tr><td>Jun 26, 2021, 3:00:00 PM</td><td>85</td></tr><tr><td>Jun 26, 2021, 4:00:00 PM</td><td>97</td></tr><tr><td>Jun 26, 2021, 5:00:00 PM</td><td>106</td></tr><tr><td>Jun 26, 2021, 6:00:00 PM</td><td>112</td></tr><tr><td>Jun 26, 2021, 7:00:00 PM</td><td>115</td></tr><tr><td>Jun 26, 2021, 8:00:00 PM</td><td>121</td></tr><tr><td>Jun 26, 2021, 9:00:00 PM</td><td>124</td></tr><tr><td>Jun 26, 2021, 10:00:00 PM</td><td>128</td></tr><tr><td>Jun 26, 2021, 11:00:00 PM</td><td>131</td></tr><tr><td>Jun 27, 2021, 12:00:00 AM</td><td>135</td></tr><tr><td>Jun 27, 2021, 1:00:00 AM</td><td>138</td></tr><tr><td>Jun 27, 2021, 2:00:00 AM</td><td>139</td></tr><tr><td>Jun 27, 2021, 3:00:00 AM</td><td>141</td></tr><tr><td>Jun 27, 2021, 4:00:00 AM</td><td>145</td></tr><tr><td>Jun 27, 2021, 5:00:00 AM</td><td>145</td></tr><tr><td>Jun 27, 2021, 6:00:00 AM</td><td>148</td></tr><tr><td>Jun 27, 2021, 7:00:00 AM</td><td>150</td></tr><tr><td>Jun 27, 2021, 8:00:00 AM</td><td>150</td></tr><tr><td>Jun 27, 2021, 9:00:00 AM</td><td>152</td></tr><tr><td>Jun 27, 2021, 10:00:00 AM</td><td>152</td></tr><tr><td>Jun 27, 2021, 11:00:00 AM</td><td>152</td></tr><tr><td>Jun 27, 2021, 12:00:00 PM</td><td>153</td></tr><tr><td>Jun 27, 2021, 1:00:00 PM</td><td>154</td></tr><tr><td>Jun 27, 2021, 2:00:00 PM</td><td>154</td></tr><tr><td>Jun 27, 2021, 3:00:00 PM</td><td>154</td></tr><tr><td>Jun 27, 2021, 4:00:00 PM</td><td>154</td></tr><tr><td>Jun 27, 2021, 5:00:00 PM</td><td>154</td></tr></tbody></table></div></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 725px; left: 937px; white-space: nowrap; font-family: Ubuntu; font-size: 15px;">200</div><div></div></div></div>
+</div>
+</div>
+</div>
+<script src="./tree in the forest _ Hack-A-Sat_files/loader(1).js" type="text/javascript"></script>
+
+<script src="./tree in the forest _ Hack-A-Sat_files/application-f3d4c5adfcfd9dbb56e44a5b5a82cc386d6d833b7c549d654029f97de333b856.js"></script><div style="position: absolute; display: none;"><div style="background: infobackground; padding: 1px; border: 1px solid infotext; font-size: 15px; margin: 15px; font-family: Ubuntu;">12:00 PM</div></div>
+
+
+</body></html>
