@@ -369,7 +369,7 @@ flag{juliet648137sierra2:GMKztC_pG2FaurEgSJIGJRhFXLBnZUMViU_2QsHRsze6Gh12pr3stjg
 ```
 
 # References
-* CTF Time Event: https://ctftime.org/event/1320
+* CTF Time Event: https://ctftime.org/event/1365
 * Repo with the artifacts discussed here: https://github.com/Neptunians/hack-a-sat
 * Team: [FireShell](https://fireshellsecurity.team/)
 * Twitter: [@NeptunianHacks](twitter.com/NeptunianHacks)
