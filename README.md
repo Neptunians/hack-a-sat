@@ -95,7 +95,7 @@ typedef struct command_header{
 } command_header;
 ```
 
-We have to send this as a binary buffer to the server to process. While it has 9 commands, we see by the handle_messa code that they are useless for this challenge purposes, so let's ignore the values for now.
+We have to send this as a binary buffer to the server to process. While it has 9 commands, we see by the handle_message code that they are useless for this challenge purposes, so let's ignore the values for now.
 
 As I said before, it logs the command execute. For doing this, it increases that specific command id number of executions:
 
@@ -109,7 +109,7 @@ char command_log[COMMAND_LIST_LENGTH];
 command_log[header->id]++;
 ```
 
-This is a vulnerable code, since we control the **header->id** value just sent. Although the array contains only the 9 command indexes, the server does not filter and we can send any index we want changing variables along the way.
+This is a vulnerable code, since we control the **header->id** value just sent. Although the array contains only the 9 command indexes, the server does not filter the boundaries and we can send any index we want changing heap values along the way.
 
 We have a particular interest on the lock_stage value. For now, we don't know the address of the lock_state relative to the command_log but... the code already gives us a clue (I changed a bit):
 ```C
@@ -265,7 +265,7 @@ Bound to socket.
 Value of lock_state: 2 ## CHANGED!
 ```
 
-Nice! We managed to change the lock_state value, originally.
+Nice! We managed to change the lock_state value, originally "1".
 
 Let's restart the server and send the same payload 5 times.
 
@@ -371,5 +371,5 @@ flag{juliet648137sierra2:GMKztC_pG2FaurEgSJIGJRhFXLBnZUMViU_2QsHRsze6Gh12pr3stjg
 # References
 * CTF Time Event: https://ctftime.org/event/1320
 * Repo with the artifacts discussed here: https://github.com/Neptunians/hack-a-sat
-* Twitter: [@NeptunianHacks](twitter.com/NeptunianHacks)
 * Team: [FireShell](https://fireshellsecurity.team/)
+* Twitter: [@NeptunianHacks](twitter.com/NeptunianHacks)
